@@ -2,74 +2,78 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Studio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
 </head>
 
 <body>
     <header class="header">
-        <a class="home-link" href="/">WebStudio</a>
+        <a class="home-link" href="./index.html">WebStudio</a>
 
-        <ul class="head-list">
-            <li class="head-list-item"><a href="">Студия</a></li>
-            <li class="head-list-item"><a href="">Портфолио</a></li>
-            <li class="head-list-item"><a href="">Контакты</a></li>
+        <nav class="nav">
+            <li class="nav-item"><a href="">Студия</a></li>
+            <li class="nav-item"><a href="">Портфолио</a></li>
+            <li class="nav-item"><a href="">Контакты</a></li>
+        </nav>
 
-            <ul class="head-contacts">
-                <li class="head-contact"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="head-contact"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+        <ul class="head-contacts">
+            <li class="head-contact"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="head-contact"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+
     </header>
 
     <main class="main-content">
-
         <section class="main-section">
             <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-            <a class="order-link" href="">Заказать услугу</a>
+            <button class="order-button" type="button">Заказать услугу</button>
         </section>
 
         <section class="qualities-section">
-            <h2 class="section-title">Качества</h2>
+            <h2 hidden class="section-title">Качества</h2>
 
             <ul class="qualities-list">
                 <li class="qualities-list-item">
-                    <h3 class="qualities-list-head">Внимание к деталям</h3>
-                    <p class="qualities-list-text">Идейные соображения, а также начало повседневной работы по
-                        формированию позиции.</p>
+                    <h3 class="qualities-item-head">Внимание к деталям</h3>
+                    <p class="qualities-item-text">
+                        Идейные соображения, а также начало повседневной работы по формированию позиции.
+                    </p>
                 </li>
                 <li class="qualities-list-item">
-                    <h3 class="qualities-list-head">Пунктуальность</h3>
-                    <p class="qualities-list-text">Задача организации, в особенности же рамки и место обучения кадров
-                        влечет за собой.</p>
+                    <h3 class="qualities-item-head">Пунктуальность</h3>
+                    <p class="qualities-item-text">
+                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                    </p>
                 </li>
                 <li class="qualities-list-item">
-                    <h3 class="qualities-list-head">Планирование</h3>
-                    <p class="qualities-list-text">Равным образом консультация с широким активом в значительной степени
-                        обуславливает.</p>
+                    <h3 class="qualities-item-head">Планирование</h3>
+                    <p class="qualities-item-text">
+                        Равным образом консультация с широким активом в значительной степени обуславливает.
+                    </p>
                 </li>
                 <li class="qualities-list-item">
-                    <h3 class="qualities-list-head">Современные технологии</h3>
-                    <p class="qualities-list-text">Значимость этих проблем настолько очевидна, что реализация плановых
-                        заданий.</p>
+                    <h3 class="qualities-item-head">Современные технологии</h3>
+                    <p class="qualities-item-text">
+                        Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    </p>
                 </li>
             </ul>
         </section>
 
         <section class="portfolio-section">
-            <h2 class="ection-title">Чем мы занимаемся</h2>
+            <h2 class="section-title">Чем мы занимаемся</h2>
 
             <ul class="portfolio-list">
                 <li class="portfolio-list-item">
-                    <a href=""><img src="/img/img1.png" alt="Portfolio" width="370"></a>
+                    <a href=""><img src="./images/img1.jpg" alt="Portfolio1" width="370" /></a>
                 </li>
                 <li class="portfolio-list-item">
-                    <a href=""><img src="/img/img2.png" alt="Portfolio" width="370"></a>
+                    <a href=""><img src="./images/img2.jpg" alt="Portfolio2" width="370" /></a>
                 </li>
                 <li class="portfolio-list-item">
-                    <a href=""><img src="/img/img3.png" alt="Portfolio" width="370"></a>
+                    <a href=""><img src="./images/img3.jpg" alt="Portfolio3" width="370" /></a>
                 </li>
             </ul>
         </section>
@@ -78,19 +82,57 @@
             <h2 class="section-title">Наша команда</h2>
 
             <ul class="team-list">
-                <li class="team-list-item"><a href=""><img src="./img/team-card 1.png" alt="team-card 1.png"></a></li>
-                <li class="team-list-item"><a href=""><img src="./img/team-card 2.png" alt="team-card 2.png"></a></li>
-                <li class="team-list-item"><a href=""><img src="./img/team-card 3.png" alt="team-card 3.png"></a></li>
-                <li class="team-list-item"><a href=""><img src="./img/team-card 4.png" alt="team-card 4.png"></a></li>
+                <li class="team-list-item">
+                    <figure>
+                        <img src="./images/team-card1.jpg" alt="Игорь Демьяненко" width="276" />
+                        <figcaption>
+                            <h3 class="team-member">Игорь Демьяненко</h3>
+                            <p class="member-position" lang="en">Product Designer</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="team-list-item">
+                    <figure>
+                        <img src="./images/team-card2.jpg" alt="Ольга Репина" width="276" />
+                        <figcaption>
+                            <h3 class="team-member">Ольга Репина</h3>
+                            <p class="member-position" lang="en">Frontend Developer</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="team-list-item">
+                    <figure>
+                        <img src="./images/team-card3.jpg" alt="Николай Тарасов" width="276" />
+                        <figcaption>
+                            <h3 class="team-member">Николай Тарасов</h3>
+                            <p class="member-position" lang="en">Marketing</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="team-list-item">
+                    <figure>
+                        <img src="./images/team-card4.jpg" alt="Михаил Ермаков" width="276" />
+                        <figcaption>
+                            <h3 class="team-member">Михаил Ермаков</h3>
+                            <p class="member-position" lang="en">UI Designer</p>
+                        </figcaption>
+                    </figure>
+                </li>
             </ul>
         </section>
     </main>
 
     <footer class="footer">
-        <a class="home-link" href="/">WebStudio</a>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="home-link" href="./index.html">WebStudio</a>
+
+        <address class="address-city">г. Киев, пр-т Леси Украинки, 26</address>
+
+        <address class="address-links">
+            <ul class="footer-contacts">
+                <li class="footer-contact"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="footer-contact"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </address>
     </footer>
 </body>
 
